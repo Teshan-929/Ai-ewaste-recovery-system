@@ -1,9 +1,3 @@
-import sqlite3
-
-connection = sqlite3.connect("ewaste.db")
-
-cursor = connection.cursor()
-
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS components (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -11,6 +5,8 @@ CREATE TABLE IF NOT EXISTS components (
     part_number TEXT NOT NULL,
     component_type TEXT NOT NULL,
     reference_price REAL,
+    estimated_resale_value REAL,
+    scrap_value REAL,
     currency TEXT DEFAULT 'USD',
     price_source TEXT,
     last_updated TEXT,
@@ -19,9 +15,3 @@ CREATE TABLE IF NOT EXISTS components (
     shipping_cost REAL DEFAULT 0
 )
 """)
-
-connection.commit()
-
-print("Components table created successfully!")
-
-connection.close()
