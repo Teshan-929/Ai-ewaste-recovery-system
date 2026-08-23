@@ -1,8 +1,8 @@
-# ♻️ AI E-Waste Recovery System
+#  AI E-Waste Recovery System
 
 An AI-powered software system designed to identify potentially valuable electronic components from e-waste, estimate their recovery value, and recommend whether components should be recovered for reuse or recycled.
 
-## 📌 Project Overview
+##  Project Overview
 
 Electronic waste contains many potentially valuable components such as CPUs, memory modules, integrated circuits, capacitors, and other electronic parts.
 
@@ -21,7 +21,7 @@ The system will eventually combine:
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Identify electronic components from PCB images.
 - Store component information in a database.
@@ -35,7 +35,7 @@ The system will eventually combine:
 
 ---
 
-## 🔄 System Workflow
+##  System Workflow
 
 ```text
 PCB Image
